@@ -1,4 +1,4 @@
-FROM ubuntu:bionic-20200112
+FROM ubuntu:bionic-20181204
 
 ENV DEBIAN_FRONTEND=noninteractive
 
