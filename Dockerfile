@@ -1,4 +1,4 @@
-FROM ubuntu:bionic-20181204
+FROM mechan/ubuntu2.27
 
 ENV DEBIAN_FRONTEND=noninteractive
 
