@@ -21,7 +21,7 @@ RUN   dpkg --add-architecture i386 &&\
       ruby-full \
       libffi6 \
       libffi-dev && \
-      rm /var/lib/apt/lists/* -vf && \
+      rm -rf /var/lib/apt/list/* && \
       apt clean && \
       apt update
 
