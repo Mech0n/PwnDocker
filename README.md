@@ -23,8 +23,8 @@ docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:1.0
 - [X] z3-solver
 - [X] Pwngdb
 - [X] pwndbg
-- [ ] seccomp-tools
-- [ ] qemu user mode
+- [x] seccomp-tools
+- [x] qemu user mode
 
 #### Glibc 2.27 
 
