@@ -20,8 +20,10 @@ RUN   dpkg --add-architecture i386 &&\
       ruby-dev \
       ruby-full \
       libffi6 \
-      libffi-dev \
-      rm /var/lib/apt/lists/* -vf
+      libffi-dev && \
+      rm /var/lib/apt/lists/* -vf && \
+      apt clean && \
+      apt update
 
 RUN wget http://security.ubuntu.com/ubuntu/pool/main/g/glibc/libc6-dev-i386_2.27-3ubuntu1.2_amd64.deb -o /root/libc6-dev-i386_2.27-3ubuntu1.2_amd64.deb && \
         apt install /root/libc6-dev-i386_2.27-3ubuntu1.2_amd64.deb \
