@@ -30,9 +30,9 @@
 - [x] gem 
 - [x] ruby 
 - [x] tmux 
-- [ ] libc6-dev-i386 
+- [x] libc6-dev-i386 
 - [x] libc6-dbg 
-- [ ] libc6-dbg:i386 
+- [x] libc6-dbg:i386 
 - [x] python-setuptools 
 - [x] netcat 
 - [x] pwntools
