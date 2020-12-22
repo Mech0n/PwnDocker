@@ -18,6 +18,8 @@ RUN dpkg --add-architecture i386 &&\
     libc6-dbg\
     make \
     netcat \
+    libffi6 \
+    libffi-dev \
     ruby-dev \
     qemu
 
