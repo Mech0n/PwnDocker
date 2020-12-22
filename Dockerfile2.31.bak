@@ -19,9 +19,10 @@ RUN dpkg --add-architecture i386 &&\
     make \
     netcat \
     ruby-dev \
-    qemu
+    qemu-user \
+    qemu-system
 
-RUN   gem install one_gadget 
+RUN   gem install one_gadget seccomp-tools
 
 RUN apt install -y python3.8-dev && \
     pip3 install pwntools z3-solver

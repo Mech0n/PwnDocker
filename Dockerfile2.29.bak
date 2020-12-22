@@ -1,8 +1,9 @@
-FROM ubuntu:16.04
+FROM ubuntu:19.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN dpkg --add-architecture i386 &&\
+RUN sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list && \
+    dpkg --add-architecture i386 &&\
     apt-get update -y &&\
     apt install -y \
     python \
@@ -18,14 +19,9 @@ RUN dpkg --add-architecture i386 &&\
     libc6-dbg\
     make \
     netcat \
-    libffi6 \
-    libffi-dev \
     ruby-dev \
-    qemu \
-    software-properties-common && \
-    apt-add-repository ppa:brightbox/ruby-ng -y && \
-    apt update -y && \
-    apt-get install ruby2.4 ruby2.4-dev -y
+    qemu-user \
+    qemu-system
 
 RUN gem install one_gadget seccomp-tools
 
