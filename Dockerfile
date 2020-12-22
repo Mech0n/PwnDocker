@@ -20,7 +20,8 @@ RUN sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/old-releas
     make \
     netcat \
     ruby-dev \
-    qemu
+    qemu \
+    qemu-system
 
 RUN gem install one_gadget seccomp-tools
 
