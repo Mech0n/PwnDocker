@@ -6,7 +6,7 @@ RUN dpkg --add-architecture i386 &&\
     apt-get update -y &&\
     apt install -y \
     python \
-    python-pip \
+    python3.8-pip \
     gcc \
     gdb \
     git \
@@ -18,10 +18,7 @@ RUN dpkg --add-architecture i386 &&\
     libc6-dbg\
     make \
     netcat \
-    ruby-dev \
-    ruby-full \
-    libffi6 \
-    libffi-dev
+    ruby-dev 
 
 # RUN       wget http://security.ubuntu.com/ubuntu/pool/main/g/glibc/libc6-dev-i386_2.27-3ubuntu1.2_amd64.deb -o /root/libc6-dev-i386_2.27-3ubuntu1.2_amd64.deb && \
 #           apt install /root/libc6-dev-i386_2.27-3ubuntu1.2_amd64.deb \
@@ -31,7 +28,7 @@ RUN dpkg --add-architecture i386 &&\
 RUN   gem install one_gadget
 
 RUN apt install -y python-dev && \
-    pip install pwntools z3-solver -i https://mirrors.aliyun.com/pypi/simple/
+    pip3 install pwntools z3-solver -i https://mirrors.aliyun.com/pypi/simple/
 
 RUN git clone --depth 1 https://github.com/pwndbg/pwndbg /root/pwngdb && \
     cd /root/pwngdb && chmod +x setup.sh && ./setup.sh
