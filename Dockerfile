@@ -19,7 +19,8 @@ RUN sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/old-releas
     libc6-dbg\
     make \
     netcat \
-    ruby-dev 
+    ruby-dev \
+    qemu
 
 RUN gem install one_gadget seccomp-tools
 
