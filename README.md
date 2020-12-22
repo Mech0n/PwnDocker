@@ -24,6 +24,7 @@ docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:1.0
 - [X] Pwngdb
 - [X] pwndbg
 - [ ] seccomp-tools
+- [ ] qemu user mode
 
 #### [Working] Glibc 2.27 
 
@@ -51,6 +52,7 @@ docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:1.0
 - [x] Pwngdb
 - [x] pwndbg
 - [ ] seccomp-tools
+- [ ] qemu user mode
 
 #### Glibc 2.29
 
@@ -76,6 +78,7 @@ docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:3.0
 - [x] Pwngdb
 - [x] pwndbg
 - [ ] seccomp-tools
+- [ ] qemu user mode
 
 #### Glibc 2.31
 
@@ -101,3 +104,4 @@ docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:4.0
 - [x] Pwngdb
 - [x] pwndbg
 - [ ] seccomp-tools
+- [ ] qemu user mode
