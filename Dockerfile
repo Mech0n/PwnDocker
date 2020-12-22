@@ -2,26 +2,27 @@ FROM ubuntu:19.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN   dpkg --add-architecture i386 &&\
-      apt-get update -y &&\
-      apt install -y \
-      python \
-      python-pip \
-      gcc \
-      gdb \
-      git \
-      wget \
-      gem \
-      ruby \
-      tmux \
-      python-setuptools \
-      libc6-dbg\
-      make \
-      netcat \
-      ruby-dev \
-      ruby-full \
-      libffi6 \
-      libffi-dev
+RUN sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list && \
+    dpkg --add-architecture i386 &&\
+    apt-get update -y &&\
+    apt install -y \
+    python \
+    python-pip \
+    gcc \
+    gdb \
+    git \
+    wget \
+    gem \
+    ruby \
+    tmux \
+    python-setuptools \
+    libc6-dbg\
+    make \
+    netcat \
+    ruby-dev \
+    ruby-full \
+    libffi6 \
+    libffi-dev
 
 # RUN       wget http://security.ubuntu.com/ubuntu/pool/main/g/glibc/libc6-dev-i386_2.27-3ubuntu1.2_amd64.deb -o /root/libc6-dev-i386_2.27-3ubuntu1.2_amd64.deb && \
 #           apt install /root/libc6-dev-i386_2.27-3ubuntu1.2_amd64.deb \
