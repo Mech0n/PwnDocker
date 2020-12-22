@@ -6,11 +6,7 @@ RUN   dpkg --add-architecture i386 &&\
       apt-get update -y &&\
       apt install -y \
       python \
-      libpython2.7-dev\
-      libpython-dev \
       python-pip \
-      python-dev \
-      python3.6-dev \
       gcc \
       gdb \
       git \
@@ -34,7 +30,7 @@ RUN   dpkg --add-architecture i386 &&\
 
 RUN   gem install one_gadget
 
-RUN   pip install cffi pwntools==4.3.0 z3-solver
+RUN   apt install -y python-dev && pip install cffi pwntools==4.3.0 z3-solver
 
 RUN git clone --depth 1 https://github.com/pwndbg/pwndbg && \
     cd pwndbg && chmod +x setup.sh && ./setup.sh
