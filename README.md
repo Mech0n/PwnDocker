@@ -1,5 +1,7 @@
 # PwnContainer
 
+#### Glibc 2.23
+
 - [X] gcc 
 - [X] gdb 
 - [X] git 
@@ -17,4 +19,25 @@
 - [X] z3-solver
 - [X] Pwngdb
 - [X] pwndbg
+- [ ] seccomp-tools
+
+#### Glibc 2.27 
+
+- [x] gcc 
+- [x] gdb 
+- [x] git 
+- [x] wget 
+- [x] gem 
+- [x] ruby 
+- [x] tmux 
+- [ ] libc6-dev-i386 
+- [x] libc6-dbg 
+- [ ] libc6-dbg:i386 
+- [x] python-setuptools 
+- [x] netcat 
+- [x] pwntools
+- [x] one_gadget
+- [x] z3-solver
+- [x] Pwngdb
+- [x] pwndbg
 - [ ] seccomp-tools

@@ -7,6 +7,7 @@ RUN   dpkg --add-architecture i386 &&\
       apt install -y \
       python \
       python-pip \
+      python-dev \
       gcc \
       gdb \
       git \
