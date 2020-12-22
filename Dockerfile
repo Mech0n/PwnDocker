@@ -6,6 +6,7 @@ RUN   dpkg --add-architecture i386 &&\
       apt-get update -y &&\
       apt install -y \
       python \
+      libpython-dev \
       python-pip \
       python-dev \
       python3.6-dev \
