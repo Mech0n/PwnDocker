@@ -1,6 +1,6 @@
 FROM mechan/ubuntu2.27
 
-RUN pip install z3-solver && \
+RUN pip install z3-solver -i https://mirrors.aliyun.com/pypi/simple && \
     sed -i -re 's/([a-z]{2}\.)?mirrors.aliyun.com/archive.ubuntu.com/g' /etc/apt/sources.list && \
     apt update -y && \
     apt install ruby-dev netcat qemu -y && \
