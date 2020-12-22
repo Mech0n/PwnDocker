@@ -1,6 +1,7 @@
 FROM mechan/ubuntu2.27
 
-RUN apt install netcat qemu -y && \
+RUN sed -i -re 's/([a-z]{2}\.)?mirrors.aliyun.com/archive.ubuntu.com/g' /etc/apt/sources.list && \
+    apt install netcat qemu -y && \
     pip install z3-solver && \
     gem install seccomp-tools
 
