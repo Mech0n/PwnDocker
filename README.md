@@ -26,7 +26,7 @@ docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:1.0
 - [ ] seccomp-tools
 - [ ] qemu user mode
 
-#### [Working] Glibc 2.27 
+#### Glibc 2.27 
 
 > 暂时基于zhihsi/dockerpwn:2.27镜像，来解决无法安装libc6-dev-i386=2.27-3ubuntu1.2安装问题。
 >
@@ -61,7 +61,7 @@ docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:2.0
 #### Glibc 2.29
 
 ```shell
-docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:3.0
+docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:3.4
 ```
 
 - [x] gcc 
