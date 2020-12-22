@@ -24,7 +24,7 @@ RUN dpkg --add-architecture i386 &&\
     qemu
 
 RUN apt install -y python-dev && \
-    pip install pwntools z3-solver
+    pip install pwntools z3-solver -i https://mirrors.aliyun.com/pypi/simple/
 
 RUN git clone --depth 1 https://github.com/pwndbg/pwndbg /root/pwngdb && \
     cd /root/pwngdb && chmod +x setup.sh && ./setup.sh
