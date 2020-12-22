@@ -25,7 +25,7 @@ RUN dpkg --add-architecture i386 &&\
     software-properties-common && \
     apt-add-repository ppa:brightbox/ruby-ng -y && \
     apt update -y && \
-    apt-get install ruby2.4 ruby2.4-dev
+    apt-get install ruby2.4 ruby2.4-dev -y
 
 RUN apt install -y python-dev && \
     pip install pwntools z3-solver -i https://mirrors.aliyun.com/pypi/simple/
