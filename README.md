@@ -54,3 +54,21 @@ docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:1.0
 
 #### [Working] Glibc 2.29
 
+- [x] gcc 
+- [x] gdb 
+- [x] git 
+- [x] wget 
+- [x] gem 
+- [x] ruby 
+- [x] tmux 
+- [x] libc6-dev-i386 
+- [x] libc6-dbg 
+- [x] libc6-dbg:i386 
+- [x] python-setuptools 
+- [x] netcat 
+- [x] pwntools
+- [x] one_gadget
+- [x] z3-solver
+- [x] Pwngdb
+- [x] pwndbg
+- [ ] seccomp-tools
