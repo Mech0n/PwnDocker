@@ -1,10 +1,10 @@
 FROM mechan/ubuntu2.27
 
+RUN pip install z3-solver
+
 RUN sed -i -re 's/([a-z]{2}\.)?mirrors.aliyun.com/archive.ubuntu.com/g' /etc/apt/sources.list && \
     apt update -y && \
-    apt install ruby-dev netcat qemu -y
-    
-RUN pip install z3-solver && \
+    apt install ruby-dev netcat qemu -y && \
     gem install seccomp-tools
 
 RUN git clone --depth 1 https://github.com/Mech0n/Pwngdb.git /root/Pwngdb && \
