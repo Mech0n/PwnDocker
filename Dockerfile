@@ -24,7 +24,7 @@ RUN sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/old-releas
 RUN   gem install one_gadget
 
 RUN apt install -y python-dev && \
-    pip install pwntools z3-solver -i https://mirrors.aliyun.com/pypi/simple/
+    pip install pwntools z3-solver
 
 RUN git clone --depth 1 https://github.com/pwndbg/pwndbg /root/pwngdb && \
     cd /root/pwngdb && chmod +x setup.sh && ./setup.sh
