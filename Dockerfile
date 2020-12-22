@@ -14,7 +14,6 @@ RUN   dpkg --add-architecture i386 &&\
       gem \
       ruby \
       tmux \
-      gcc-multilib\
       python-setuptools \
       make \
       netcat \
