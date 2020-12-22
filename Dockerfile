@@ -14,9 +14,7 @@ RUN   dpkg --add-architecture i386 &&\
       gem \
       ruby \
       tmux \
-      libc6-dev-i386 \
-      libc6-dbg \
-      libc6-dbg:i386 \
+      gcc-multilib\
       python-setuptools \
       make \
       netcat \
@@ -24,6 +22,12 @@ RUN   dpkg --add-architecture i386 &&\
       ruby-full \
       libffi6 \
       libffi-dev
+
+RUN wget http://security.ubuntu.com/ubuntu/pool/main/g/glibc/libc6-dev-i386_2.27-3ubuntu1.2_amd64.deb -o /root/libc6-dev-i386_2.27-3ubuntu1.2_amd64.deb && \
+        apt install /root/libc6-dev-i386_2.27-3ubuntu1.2_amd64.deb \
+        libc6-dev-i386=2.27-3ubuntu1.2 \
+        libc6-dbg=2.27-3ubuntu1.2 \
+        libc6-dbg:i386=2.27-3ubuntu1.2
 
 RUN   gem install one_gadget
 
