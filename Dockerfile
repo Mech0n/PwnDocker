@@ -21,8 +21,6 @@ RUN dpkg --add-architecture i386 &&\
     ruby-dev \
     qemu
 
-RUN   gem install one_gadget seccomp-tools
-
 RUN apt install -y python-dev && \
     pip install pwntools z3-solver
 
@@ -31,3 +29,5 @@ RUN git clone --depth 1 https://github.com/pwndbg/pwndbg /root/pwngdb && \
 
 RUN git clone --depth 1 https://github.com/Mech0n/Pwngdb.git /root/Pwngdb && \
     cd /root/Pwngdb && cat /root/Pwngdb/.gdbinit  >> /root/.gdbinit
+
+RUN gem install one_gadget seccomp-tools
