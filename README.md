@@ -1,9 +1,11 @@
 # PwnContainer
 
+> 现在镜像好大了，再添加新功能可能会更大了😂。尝试减少docker层数ing
+
 #### Glibc 2.23 
 
 ```shell
-docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:1.0
+docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:1.1
 ```
 
 - [X] gcc 
@@ -35,7 +37,7 @@ docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:1.0
 > 现在的Glibc2.27已经更新到2.27-3ubuntu1.4，修复了2.27-3ubuntu1.2在Double Free问题，所以暂时无法还原2.27-3ubuntu1.2的环境，暂时使用zhihsi/dockerpwn:2.27来还原2.27-3ubuntu1.2的环境。
 
 ```shell
-docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:2.0
+docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:2.1
 ```
 
 - [x] gcc 
@@ -55,13 +57,13 @@ docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:2.0
 - [x] z3-solver
 - [x] Pwngdb
 - [x] pwndbg
-- [ ] seccomp-tools
-- [ ] qemu user mode
+- [x] seccomp-tools
+- [x] qemu user mode
 
 #### Glibc 2.29
 
 ```shell
-docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:3.4
+docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:3.5
 ```
 
 - [x] gcc 
@@ -81,13 +83,13 @@ docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:3.4
 - [x] z3-solver
 - [x] Pwngdb
 - [x] pwndbg
-- [ ] seccomp-tools
-- [ ] qemu user mode
+- [x] seccomp-tools
+- [x] qemu user mode
 
 #### Glibc 2.31
 
 ```shell
-docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:4.0
+docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:4.1
 ```
 
 - [x] gcc 
@@ -107,5 +109,5 @@ docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:4.0
 - [x] z3-solver
 - [x] Pwngdb
 - [x] pwndbg
-- [ ] seccomp-tools
-- [ ] qemu user mode
+- [x] seccomp-tools
+- [x] qemu user mode
