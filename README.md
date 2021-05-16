@@ -38,6 +38,9 @@ docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:1.1
 
 ```shell
 docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:2.1
+
+# 2.27-3ubuntu1.4
+docker pull registry.cn-hangzhou.aliyuncs.com/yisumi/pwndocker:5.1
 ```
 
 - [x] gcc 
