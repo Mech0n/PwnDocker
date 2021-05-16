@@ -28,4 +28,4 @@ RUN apt install -y python-dev python-pip && \
     python -m pip install pwntools==4.3.1 z3-solver
 
 RUN git clone https://github.com/pwndbg/pwndbg /root/pwngdb && \
-    cd /root/pwngdb && chmod +x setup.sh && sed -i -re 's/sudo//g' ./setup.sh && ./setup.sh
+    cd /root/pwngdb && chmod +x setup.sh && sed -i -re 's/sudo //g' ./setup.sh && ./setup.sh
