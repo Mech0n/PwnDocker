@@ -1,7 +1,7 @@
 FROM ubuntu:21.10
 
 ENV DEBIAN_FRONTEND=noninteractive
-# sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
+RUN sed -i -re 's/([a-z]{2}\.)?archive.ubuntu.com|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
 RUN dpkg --add-architecture i386 &&\
     apt-get update -y &&\
     apt install -y \
